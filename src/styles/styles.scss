@@ -19,6 +19,13 @@ $marginbutton: 0px 20px;
     top: 0;
 }
 
+body{
+    height: 0;
+    widows: 0;
+    left: 0;
+    top: 0;
+}
+
 header {
     justify-content: center;
     height: 80px;
@@ -88,14 +95,13 @@ header {
     }
 
     .Blureffect {
-        z-index: 9;
+        z-index: 1;
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
-        height: 100%;
+        height: 80%;
         background-color: rgba(rgb(16, 113, 151), .4);
-        z-index: 5;
     }
 
 }
@@ -137,7 +143,6 @@ header {
             margin: $marginbutton;
             border: $white 2px;
             background-color: transparent;
-            padding: 15px;
             color: white;
             border: $white solid 1px;
             padding: $buttonsize;
@@ -151,7 +156,6 @@ header {
             margin: $marginbutton;
             border: $white 2px;
             background-color: $primary;
-            padding: 15px;
             color: white;
             padding: $buttonsize;
             border-radius: 5px;
@@ -162,3 +166,13 @@ header {
     }
 }
 
+.Maindata{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    .Mainsubdata{
+        widows: 49%;
+        flex-direction: column;
+    }
+}
