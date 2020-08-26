@@ -32,6 +32,7 @@ const Banner = () => {
         <Link className="button1" to="/Projects">View Projects</Link>
         <Link className="button2" to="/Contact">Contact Me</Link>
         </nav>
+        
         </div>
         </div>
     </div>

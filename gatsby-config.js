@@ -11,7 +11,10 @@ module.exports = {
         custom: {
           families: ['Reg'],
           urls: ["/font/font.css"]
-        }
+        },
+        Fonts: {
+          families: ['OCR A']
+        },
       }
     },
     `gatsby-plugin-react-helmet`,
