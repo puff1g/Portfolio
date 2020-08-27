@@ -12,6 +12,13 @@ const Banner = () => {
             }
             }
         }
+        whoimage: file(relativePath: { eq: "" }) {
+            childImageSharp {
+                fluid(maxWidth: 3080, quality: 100) {
+                    ...GatsbyImageSharpFluid
+            }
+            }
+        }
     }
     `)
     return (
@@ -33,6 +40,7 @@ const Banner = () => {
         <Link className="button2" to="/Contact">Contact Me</Link>
         </nav>
         </div>
+        <div className="Scrolltext">Scroll for more</div>
         </div>
     </div>
     <div>
@@ -43,7 +51,9 @@ const Banner = () => {
     <h1>Developer in Learning</h1>
     <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</h4>
     </div>
-    <div className="Maindataimg"></div>
+    <div className="Maindataimg">
+    <p>asdasdasd</p>
+    </div>
     </div>
     </div> //* Stay within!
 ) 
