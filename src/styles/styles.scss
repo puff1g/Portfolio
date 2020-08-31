@@ -139,13 +139,26 @@ header {
         position: relative;
         top: 70px;
         align-self: center;
+        font-family: $fontmain;
 
         .button1 {
             margin: $marginbutton;
-            border: $white 2px;
-            background-color: transparent;
-            color: white;
             border: $white solid 1px;
+            background-color: transparent;
+            color: $white;
+            padding: $buttonsize;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .button1:hover{
+            color: $primary;
+            border: $primary solid 1px;
+            box-shadow: 5px 5px $primary;
+            margin: $marginbutton;
+            background-color: transparent;
             padding: $buttonsize;
             border-radius: 5px;
             text-align: center;
@@ -155,14 +168,18 @@ header {
 
         .button2 {
             margin: $marginbutton;
-            border: $white 2px;
+            border: $primary solid 1px;
             background-color: $primary;
-            color: white;
+            color: $white;
             padding: $buttonsize;
             border-radius: 5px;
             text-align: center;
             text-decoration: none;
             font-size: 16px;
+        }
+        .button2:hover{
+            border: $white solid 1px;
+            background-color: transparent;
         }
     }
 }
@@ -184,6 +201,8 @@ header {
     /* display: flex;
     flex-direction: row; */
     .Mainsubdata {
+        grid-column-start: 2;
+        grid-column-end: 4;
         widows: 49%;
         // flex-direction: column;
         h2{
@@ -198,6 +217,7 @@ header {
         }
     }
     .Maindataimg{
+        grid-column-start: 5;
         width: 40%;
         
     }
